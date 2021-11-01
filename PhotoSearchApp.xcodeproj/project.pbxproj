@@ -62,9 +62,8 @@
 			children = (
 				02D0EC16272E91C60090B451 /* AppDelegate.swift */,
 				02D0EC18272E91C60090B451 /* SceneDelegate.swift */,
-				02D0EC1A272E91C60090B451 /* HomeScreenViewController.swift */,
+				02D0EC39272F08870090B451 /* Controllers */,
 				02D0EC38272F085D0090B451 /* Model */,
-				02D0EC34272F083E0090B451 /* PhotosCollectionViewController.swift */,
 				02D0EC1C272E91C60090B451 /* Main.storyboard */,
 				02D0EC1F272E91CE0090B451 /* Assets.xcassets */,
 				02D0EC21272E91CE0090B451 /* LaunchScreen.storyboard */,
@@ -79,6 +78,15 @@
 				02D0EC2F272EDE2F0090B451 /* ApiResponseModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		02D0EC39272F08870090B451 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02D0EC1A272E91C60090B451 /* HomeScreenViewController.swift */,
+				02D0EC34272F083E0090B451 /* PhotosCollectionViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

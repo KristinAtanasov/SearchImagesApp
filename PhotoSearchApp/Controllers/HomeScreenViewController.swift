@@ -8,7 +8,7 @@ class ViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     
     
-    var results = [Result]()
+    var resultURLS = [Result]()
     let stringURL = "https://api.unsplash.com/search/photos?page=1&per_page=30&query=office&client_id=yOpkJ9GeI36-HPTdTZZfG2iIR5scgbXSMNXvSwUPMjw"
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
                     let jsonDecoder = JSONDecoder()
                     let apiResponseData = try jsonDecoder.decode(ApiResponse.self, from: data)
                     DispatchQueue.main.async {
-                        self.results = apiResponseData.results
+                        self.resultURLS = apiResponseData.results
                     }
                     
                 } catch  {
@@ -41,6 +41,20 @@ class ViewController: UIViewController {
             }
         }
         task.resume()
+    }
+    
+    @IBSegueAction func searchButtonTapped(_ coder: NSCoder) -> PhotosCollectionViewController? {
+        
+        let resultURLS = self.resultURLS
+        
+        return PhotosCollectionViewController(coder: coder, resultURLS: resultURLS)
+    }
+    
+    
+    
+    
+   @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue){
+        
     }
 }
 
