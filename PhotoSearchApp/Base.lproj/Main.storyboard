@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeScreenViewController" customModule="PhotoSearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="Eo1-vX-byb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="Eo1-vX-byb">
                                         <rect key="frame" x="17.5" y="350" width="379" height="165"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please type photos category..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOe-ly-kA7">
@@ -36,25 +36,48 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zma-zG-twx">
-                                                <rect key="frame" x="55" y="115" width="269" height="50"/>
-                                                <color key="backgroundColor" red="0.39304791900000002" green="0.82201659429999996" blue="0.77889554790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="269" id="dby-JS-5fd"/>
-                                                    <constraint firstAttribute="height" constant="50" id="lfN-8o-KVu"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                                <state key="normal" title="Search">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="ono-RU-bDC" kind="show" destinationCreationSelector="searchButtonTapped:" id="smS-vc-jn6"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-QD-gcE">
+                                                <rect key="frame" x="0.0" y="115" width="379" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zma-zG-twx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                        <color key="backgroundColor" red="0.3921568627" green="0.82352941180000006" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="dby-JS-5fd"/>
+                                                            <constraint firstAttribute="height" constant="50" id="lfN-8o-KVu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                        <state key="normal" title="Search">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ocq-lG-i8K"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dL-MM-tr9">
+                                                        <rect key="frame" x="194" y="0.0" width="185" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="cxA-gI-gNZ"/>
+                                                            <constraint firstAttribute="width" constant="185" id="yKj-IX-EwR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                        <state key="normal" title="Show Results">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yIy-YQ-ILu"/>
+                                                            <action selector="showResultsOnCollectionController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZY-XY-cX2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Zma-zG-twx" firstAttribute="top" secondItem="zOe-ly-kA7" secondAttribute="bottom" constant="69" id="4Xd-4v-hRF"/>
-                                            <constraint firstItem="Zma-zG-twx" firstAttribute="top" secondItem="zOe-ly-kA7" secondAttribute="bottom" constant="69" id="YhS-P4-zGS"/>
+                                            <constraint firstAttribute="trailing" secondItem="Shu-QD-gcE" secondAttribute="trailing" id="KcR-Ab-fgy"/>
+                                            <constraint firstItem="Shu-QD-gcE" firstAttribute="top" secondItem="zOe-ly-kA7" secondAttribute="bottom" constant="69" id="WxY-RT-baw"/>
+                                            <constraint firstItem="Shu-QD-gcE" firstAttribute="leading" secondItem="Eo1-vX-byb" secondAttribute="leading" id="aKb-DP-4tL"/>
+                                            <constraint firstAttribute="bottom" secondItem="Shu-QD-gcE" secondAttribute="bottom" id="g4J-x5-cwB"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -83,36 +106,52 @@
                     <navigationItem key="navigationItem" id="HPb-y4-mhj"/>
                     <connections>
                         <outlet property="searchButton" destination="Zma-zG-twx" id="2g6-Fq-vLJ"/>
+                        <outlet property="showResultsButton" destination="4dL-MM-tr9" id="qBs-JT-gKO"/>
                         <outlet property="textField" destination="zOe-ly-kA7" id="4NQ-Nv-zpb"/>
+                        <segue destination="ono-RU-bDC" kind="show" identifier="moveToCollectionController" id="cFx-HL-Fe0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2615.9420289855075" y="87.723214285714278"/>
         </scene>
-        <!--Photos Collection View Controller-->
+        <!--Images Collection View Controller-->
         <scene sceneID="q5W-Bp-JCx">
             <objects>
-                <collectionViewController modalPresentationStyle="fullScreen" id="ono-RU-bDC" customClass="PhotosCollectionViewController" customModule="PhotoSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController modalPresentationStyle="fullScreen" id="ono-RU-bDC" customClass="ImagesCollectionViewController" customModule="PhotoSearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="t7d-VR-oNx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OKo-rP-l1c">
-                            <size key="itemSize" width="128" height="128"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="10" id="OKo-rP-l1c">
+                            <size key="itemSize" width="190" height="152"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Tus-T6-lDc">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Tus-T6-lDc" customClass="ImageCollectionViewCell" customModule="PhotoSearchApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="173" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hde-jH-JZa">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="173" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ruq-U0-HVS">
+                                            <rect key="frame" x="0.0" y="0.0" width="173" height="152"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ruq-U0-HVS" secondAttribute="trailing" id="4WE-Dn-3Xg"/>
+                                        <constraint firstItem="ruq-U0-HVS" firstAttribute="leading" secondItem="Hde-jH-JZa" secondAttribute="leading" id="LBB-se-JEF"/>
+                                        <constraint firstItem="ruq-U0-HVS" firstAttribute="top" secondItem="Hde-jH-JZa" secondAttribute="top" id="ntU-Wb-beC"/>
+                                        <constraint firstAttribute="bottom" secondItem="ruq-U0-HVS" secondAttribute="bottom" id="vMn-y4-S7B"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.1232876712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="customSize" width="173" height="152"/>
+                                <connections>
+                                    <outlet property="cellImageView" destination="ruq-U0-HVS" id="nWJ-fw-pbe"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -131,7 +170,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XV-DH-WQY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="csE-3O-PVR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3483" y="88"/>
+            <point key="canvasLocation" x="3482.608695652174" y="87.723214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9RN-NW-bbg">
