@@ -12,7 +12,7 @@
 
 </br>
 
-![homeScreenOffice](https://user-images.githubusercontent.com/67967349/140103429-803769e5-e4a3-4aa1-b1af-11c105f5acbe.jpg)
+
 
 </br>
 
@@ -35,6 +35,7 @@
 </br>
 
 ![officeImages](https://user-images.githubusercontent.com/67967349/140105186-d53ced42-a9b5-446b-b6ed-c21f55b47f59.jpg)
+![homeScreenOffice](https://user-images.githubusercontent.com/67967349/140103429-803769e5-e4a3-4aa1-b1af-11c105f5acbe.jpg)
 
 
 
