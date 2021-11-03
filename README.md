@@ -1,8 +1,8 @@
 # Search Images App
 
-<\br>
-<\br>
-<\br>
+</br>
+</br>
+</br>
 
 ### App usage
 
