@@ -1,8 +1,6 @@
 # Search Images App
 
 </br>
-</br>
-</br>
 
 ### App usage
 
@@ -11,6 +9,8 @@
 > - The app can be used for searching images online based on a topic writed by us.
 > - Once we press the ,,Search'' and ,,Show Results'' buttons we are redirected to new screen with images displayed in collection view.
 > - The images which we like can be displayed on a full screen, once we press the liked from us image we are redirected to new screen.
+
+</br>
 
 ![homeScreenOffice](https://user-images.githubusercontent.com/67967349/140103429-803769e5-e4a3-4aa1-b1af-11c105f5acbe.jpg)
 
