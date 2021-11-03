@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022C56612732933600554E6F /* ShowSelectedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C56602732933600554E6F /* ShowSelectedImageViewController.swift */; };
 		02D0EC17272E91C60090B451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EC16272E91C60090B451 /* AppDelegate.swift */; };
 		02D0EC19272E91C60090B451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EC18272E91C60090B451 /* SceneDelegate.swift */; };
 		02D0EC1B272E91C60090B451 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EC1A272E91C60090B451 /* HomeScreenViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		022C56602732933600554E6F /* ShowSelectedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSelectedImageViewController.swift; sourceTree = "<group>"; };
 		02D0EC13272E91C60090B451 /* PhotoSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D0EC16272E91C60090B451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02D0EC18272E91C60090B451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				02D0EC1A272E91C60090B451 /* HomeScreenViewController.swift */,
 				02D0EC34272F083E0090B451 /* ImagesCollectionViewController.swift */,
+				022C56602732933600554E6F /* ShowSelectedImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				02D0EC4127300B460090B451 /* ImageCollectionViewCell.swift in Sources */,
 				02D0EC1B272E91C60090B451 /* HomeScreenViewController.swift in Sources */,
 				02D0EC17272E91C60090B451 /* AppDelegate.swift in Sources */,
+				022C56612732933600554E6F /* ShowSelectedImageViewController.swift in Sources */,
 				02D0EC19272E91C60090B451 /* SceneDelegate.swift in Sources */,
 				02D0EC35272F083E0090B451 /* ImagesCollectionViewController.swift in Sources */,
 				02D0EC30272EDE2F0090B451 /* ApiResponseModel.swift in Sources */,

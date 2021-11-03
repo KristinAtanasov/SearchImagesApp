@@ -22,9 +22,9 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Ujz-aq-C1K">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="backgroundColor" red="0.39215686274509803" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="Eo1-vX-byb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="Eo1-vX-byb">
                                         <rect key="frame" x="17.5" y="350" width="379" height="165"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please type photos category..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOe-ly-kA7">
@@ -36,17 +36,17 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-QD-gcE">
-                                                <rect key="frame" x="0.0" y="115" width="379" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-QD-gcE">
+                                                <rect key="frame" x="9" y="115" width="361" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zma-zG-twx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                                                        <color key="backgroundColor" red="0.3921568627" green="0.82352941180000006" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="50"/>
+                                                        <color key="backgroundColor" red="0.39215686274509803" green="0.83137254901960778" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="150" id="dby-JS-5fd"/>
+                                                            <constraint firstAttribute="width" constant="172" id="dby-JS-5fd"/>
                                                             <constraint firstAttribute="height" constant="50" id="lfN-8o-KVu"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                                         <state key="normal" title="Search">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -54,14 +54,14 @@
                                                             <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ocq-lG-i8K"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dL-MM-tr9">
-                                                        <rect key="frame" x="194" y="0.0" width="185" height="50"/>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dL-MM-tr9">
+                                                        <rect key="frame" x="182" y="0.0" width="179" height="50"/>
+                                                        <color key="backgroundColor" red="0.3921568627" green="0.82352941180000006" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="cxA-gI-gNZ"/>
-                                                            <constraint firstAttribute="width" constant="185" id="yKj-IX-EwR"/>
+                                                            <constraint firstAttribute="width" constant="179" id="yKj-IX-EwR"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                                         <state key="normal" title="Show Results">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -74,9 +74,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Shu-QD-gcE" secondAttribute="trailing" id="KcR-Ab-fgy"/>
                                             <constraint firstItem="Shu-QD-gcE" firstAttribute="top" secondItem="zOe-ly-kA7" secondAttribute="bottom" constant="69" id="WxY-RT-baw"/>
-                                            <constraint firstItem="Shu-QD-gcE" firstAttribute="leading" secondItem="Eo1-vX-byb" secondAttribute="leading" id="aKb-DP-4tL"/>
                                             <constraint firstAttribute="bottom" secondItem="Shu-QD-gcE" secondAttribute="bottom" id="g4J-x5-cwB"/>
                                         </constraints>
                                     </stackView>
@@ -151,6 +149,7 @@
                                 <size key="customSize" width="173" height="152"/>
                                 <connections>
                                     <outlet property="cellImageView" destination="ruq-U0-HVS" id="nWJ-fw-pbe"/>
+                                    <segue destination="AzN-Bi-6FV" kind="show" identifier="showSelectedImage" destinationCreationSelector="showSelectedImage:sender:" id="WOh-gc-PZM"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -162,7 +161,7 @@
                     <navigationItem key="navigationItem" id="POp-l7-kh1">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="EE1-lY-9so">
                             <connections>
-                                <segue destination="csE-3O-PVR" kind="unwind" unwindAction="unwindToHomeScreenWithSegue:" id="ZjJ-8z-b49"/>
+                                <segue destination="csE-3O-PVR" kind="unwind" identifier="returnToHomeScreen" unwindAction="unwindToHomeScreenWithSegue:" id="ZjJ-8z-b49"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -171,6 +170,36 @@
                 <exit id="csE-3O-PVR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3482.608695652174" y="87.723214285714278"/>
+        </scene>
+        <!--Show Selected Image View Controller-->
+        <scene sceneID="wym-vs-wF3">
+            <objects>
+                <viewController id="AzN-Bi-6FV" customClass="ShowSelectedImageViewController" customModule="PhotoSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sd7-m6-M2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="831-TE-Dkv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cY7-Yq-J80"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="831-TE-Dkv" firstAttribute="leading" secondItem="cY7-Yq-J80" secondAttribute="leading" id="9KM-Hs-5sL"/>
+                            <constraint firstAttribute="bottom" secondItem="831-TE-Dkv" secondAttribute="bottom" id="Iwp-qp-Hhv"/>
+                            <constraint firstItem="831-TE-Dkv" firstAttribute="top" secondItem="cY7-Yq-J80" secondAttribute="top" id="hVv-in-ASc"/>
+                            <constraint firstItem="831-TE-Dkv" firstAttribute="trailing" secondItem="cY7-Yq-J80" secondAttribute="trailing" id="j6p-Zd-tHT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IDj-6Z-f0G"/>
+                    <connections>
+                        <outlet property="showSelectedImageView" destination="831-TE-Dkv" id="5PH-5J-d4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOM-Mq-sIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4313.04347826087" y="87.723214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9RN-NW-bbg">
@@ -195,9 +224,6 @@
         <image name="image" width="390" height="844"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

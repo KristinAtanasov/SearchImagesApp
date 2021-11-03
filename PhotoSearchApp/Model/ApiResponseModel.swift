@@ -1,6 +1,7 @@
 
 
 import Foundation
+import UIKit
 
 struct ApiResponse: Codable{
    let total: Int
@@ -13,3 +14,4 @@ struct Result: Codable {
 struct URLS: Codable {
     let regular: String
 }
+
