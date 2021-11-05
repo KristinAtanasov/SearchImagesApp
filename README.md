@@ -27,10 +27,7 @@
 ---
 
 ![homeScreenOffice](https://user-images.githubusercontent.com/67967349/140482271-dbc71511-f88f-4b60-ac90-13ae577e6367.jpg)
-![officeShowResults](https://user-images.githubusercontent.com/67967349/140119382-42f76673-fa6e-42c0-b2cf-868751c2ba57.jpg)
-
-
-
+![officeImages](https://user-images.githubusercontent.com/67967349/140482380-d51bca45-e3b2-4a15-aafc-c55918654007.jpg)
 
 
 
