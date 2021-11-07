@@ -62,7 +62,7 @@ class HomeScreenViewController: UIViewController {
         self.fetchCategoryImages()
         textField.resignFirstResponder() 
         searchButton.isHidden = true
-        showResultsButton.backgroundColor = #colorLiteral(red: 0, green: 0.9300919771, blue: 0, alpha: 1)
+        showResultsButton.backgroundColor = #colorLiteral(red: 0, green: 0.9294117647, blue: 0, alpha: 1)
         showResultsButton.isHidden = false
     }
     
