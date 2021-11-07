@@ -19,10 +19,9 @@ class ImageCollectionViewCell: UICollectionViewCell {
                 }
             }
             else{
-                print(error)
+             print(error)
             }
         }
         task.resume()
     }
-    
 }

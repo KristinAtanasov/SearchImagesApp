@@ -15,14 +15,14 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         
         textField.becomeFirstResponder()
-       
+        
         searchButton.layer.cornerRadius = 10
         showResultsButton.layer.cornerRadius = 10
         showResultsButton.isHidden = true
         
     }
     
-   
+    
     func fetchImageURLS(query: String){
         let stringURL = "https://api.unsplash.com/search/photos?page=1&per_page=30&query=\(query)&client_id=yOpkJ9GeI36-HPTdTZZfG2iIR5scgbXSMNXvSwUPMjw"
         let safeURLString = stringURL.replacingOccurrences(of: " ", with: "-")
@@ -46,9 +46,9 @@ class HomeScreenViewController: UIViewController {
         task.resume()
     }
     func fetchCategoryImages(){
-         if let categoryImages = textField.text{
-             self.fetchImageURLS(query: categoryImages)
-         }
+        if let categoryImages = textField.text{
+            self.fetchImageURLS(query: categoryImages)
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "moveToCollectionController"{
@@ -57,7 +57,6 @@ class HomeScreenViewController: UIViewController {
             }
         }
     }
- 
     @IBAction func searchButtonTapped(_ sender: UIButton) {
         
         self.fetchCategoryImages()
@@ -65,13 +64,11 @@ class HomeScreenViewController: UIViewController {
         searchButton.isHidden = true
         showResultsButton.backgroundColor = #colorLiteral(red: 0, green: 0.9300919771, blue: 0, alpha: 1)
         showResultsButton.isHidden = false
-       
     }
     
-    @IBAction func showResultsOnCollectionController(_ sender: UIButton) {
+  @IBAction func showResultsOnCollectionController(_ sender: UIButton) {
         self.performSegue(withIdentifier: "moveToCollectionController", sender: nil)
     }
-    
     
     @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue){
         if segue.identifier == "returnToHomeScreen"{
