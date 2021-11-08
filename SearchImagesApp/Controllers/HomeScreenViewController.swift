@@ -9,7 +9,6 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet var showResultsButton: UIButton!
     
     var resultURLS = [Result]()
-    let operationQueue = OperationQueue()
     
     override func viewDidLoad() {
         super.viewDidLoad()
