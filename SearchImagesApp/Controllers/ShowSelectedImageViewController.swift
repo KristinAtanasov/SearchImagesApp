@@ -26,7 +26,7 @@ class ShowSelectedImageViewController: UIViewController {
     func configureImageCell(with urlString: String){
         guard let url = URL(string: urlString) else{return}
         
-        let task = URLSession.shared.dataTask(with: url){
+        let taskRequest = URLSession.shared.dataTask(with: url){
             (data, response, error) in
             if let data = data, let image = UIImage(data: data){
                 DispatchQueue.main.async {
@@ -37,7 +37,7 @@ class ShowSelectedImageViewController: UIViewController {
                 print(error)
             }
         }
-        task.resume()
+        taskRequest.resume()
     }
 }
 
