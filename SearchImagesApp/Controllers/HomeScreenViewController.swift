@@ -28,7 +28,7 @@ class HomeScreenViewController: UIViewController {
         
         guard let url = URL(string: safeURLString) else {return}
         
-        let task = URLSession.shared.dataTask(with: url) {
+        let taskRequest = URLSession.shared.dataTask(with: url) {
             (data, response, error) in
             if let data = data {
                 do {
@@ -42,7 +42,7 @@ class HomeScreenViewController: UIViewController {
                 }
             }
         }
-        task.resume()
+        taskRequest.resume()
     }
     func fetchCategoryImages(){
         if let categoryImages = textField.text{
