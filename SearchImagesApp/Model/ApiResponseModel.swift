@@ -3,6 +3,7 @@
 import Foundation
 import UIKit
 
+
 struct ApiResponse: Codable{
    let total: Int
    let total_pages: Int
