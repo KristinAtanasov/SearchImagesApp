@@ -24,7 +24,7 @@ class ShowSelectedImageViewController: UIViewController {
     }
     
     func configureImageCell(with urlString: String){
-        guard let url = URL(string: urlString) else{return}
+        guard let url = URL(string: urlString) else {return}
         
         let taskRequest = URLSession.shared.dataTask(with: url){
             (data, response, error) in

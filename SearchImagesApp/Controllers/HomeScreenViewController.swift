@@ -59,7 +59,7 @@ class HomeScreenViewController: UIViewController {
     @IBAction func searchButtonTapped(_ sender: UIButton) {
         
         self.fetchCategoryImages()
-        textField.resignFirstResponder() 
+        textField.resignFirstResponder()
         searchButton.isHidden = true
         showResultsButton.backgroundColor = #colorLiteral(red: 0, green: 0.9294117647, blue: 0, alpha: 1)
         showResultsButton.isHidden = false
