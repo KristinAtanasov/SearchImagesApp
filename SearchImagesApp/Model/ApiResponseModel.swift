@@ -1,8 +1,6 @@
+// The data model for the fethed images
 
-
-import Foundation
 import UIKit
-
 
 struct ApiResponse: Codable{
    let total: Int

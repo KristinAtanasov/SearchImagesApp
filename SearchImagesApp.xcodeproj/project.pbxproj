@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		022C56612732933600554E6F /* ShowSelectedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C56602732933600554E6F /* ShowSelectedImageViewController.swift */; };
+		024AE8DB2780C77100746F97 /* ImagesCollectionVC + DataSourceMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AE8DA2780C77100746F97 /* ImagesCollectionVC + DataSourceMethods.swift */; };
+		024AE8E32780D04F00746F97 /* HomeScreenVC + FetchingImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AE8E22780D04F00746F97 /* HomeScreenVC + FetchingImages.swift */; };
 		02D0EC17272E91C60090B451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EC16272E91C60090B451 /* AppDelegate.swift */; };
 		02D0EC19272E91C60090B451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EC18272E91C60090B451 /* SceneDelegate.swift */; };
 		02D0EC1B272E91C60090B451 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EC1A272E91C60090B451 /* HomeScreenViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		022C56602732933600554E6F /* ShowSelectedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSelectedImageViewController.swift; sourceTree = "<group>"; };
+		024AE8DA2780C77100746F97 /* ImagesCollectionVC + DataSourceMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagesCollectionVC + DataSourceMethods.swift"; sourceTree = "<group>"; };
+		024AE8E22780D04F00746F97 /* HomeScreenVC + FetchingImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreenVC + FetchingImages.swift"; sourceTree = "<group>"; };
 		02D0EC13272E91C60090B451 /* SearchImagesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchImagesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D0EC16272E91C60090B451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02D0EC18272E91C60090B451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024AE8D32780A65D00746F97 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				02D0EC4027300B460090B451 /* ImageCollectionViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		024AE8D72780B01700746F97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02D0EC1C272E91C60090B451 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		024AE8DF2780C77D00746F97 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				024AE8DA2780C77100746F97 /* ImagesCollectionVC + DataSourceMethods.swift */,
+				024AE8E22780D04F00746F97 /* HomeScreenVC + FetchingImages.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		02D0EC0A272E91C60090B451 = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +97,9 @@
 				02D0EC18272E91C60090B451 /* SceneDelegate.swift */,
 				02D0EC39272F08870090B451 /* Controllers */,
 				02D0EC38272F085D0090B451 /* Model */,
-				02D0EC4027300B460090B451 /* ImageCollectionViewCell.swift */,
-				02D0EC1C272E91C60090B451 /* Main.storyboard */,
+				024AE8DF2780C77D00746F97 /* Extensions */,
+				024AE8D32780A65D00746F97 /* CustomCell */,
+				024AE8D72780B01700746F97 /* View */,
 				02D0EC1F272E91CE0090B451 /* Assets.xcassets */,
 				02D0EC21272E91CE0090B451 /* LaunchScreen.storyboard */,
 				02D0EC24272E91CE0090B451 /* Info.plist */,
@@ -165,11 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024AE8DB2780C77100746F97 /* ImagesCollectionVC + DataSourceMethods.swift in Sources */,
 				02D0EC4127300B460090B451 /* ImageCollectionViewCell.swift in Sources */,
 				02D0EC1B272E91C60090B451 /* HomeScreenViewController.swift in Sources */,
 				02D0EC17272E91C60090B451 /* AppDelegate.swift in Sources */,
 				022C56612732933600554E6F /* ShowSelectedImageViewController.swift in Sources */,
 				02D0EC19272E91C60090B451 /* SceneDelegate.swift in Sources */,
+				024AE8E32780D04F00746F97 /* HomeScreenVC + FetchingImages.swift in Sources */,
 				02D0EC35272F083E0090B451 /* ImagesCollectionViewController.swift in Sources */,
 				02D0EC30272EDE2F0090B451 /* ApiResponseModel.swift in Sources */,
 			);

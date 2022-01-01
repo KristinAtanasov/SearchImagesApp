@@ -1,11 +1,10 @@
-
+//  Controller responsible for displaying the fetched images in the cells
 
 import UIKit
 
-
 class ImagesCollectionViewController: UICollectionViewController {
     
-    private let reuseIdentifier = "Cell"
+    lazy var reuseIdentifier = "Cell"
     
     var resultURLS = [Result]()
     
@@ -15,6 +14,8 @@ class ImagesCollectionViewController: UICollectionViewController {
         
         collectionView.setCollectionViewLayout(generateLayout(), animated: false)
     }
+    
+    //MARK: - Configure cells layout
     
     private func generateLayout() -> UICollectionViewLayout{
         let spacing: CGFloat = 5
@@ -53,6 +54,8 @@ class ImagesCollectionViewController: UICollectionViewController {
         return layout
     }
     
+    //MARK: - IB Actions
+    
     @IBSegueAction func showSelectedImage(_ coder: NSCoder, sender: Any?) -> ShowSelectedImageViewController? {
         if let cell = sender as? UICollectionViewCell, let indexPath = collectionView.indexPath(for: cell){
             
@@ -62,30 +65,7 @@ class ImagesCollectionViewController: UICollectionViewController {
         else{
             return ShowSelectedImageViewController(coder: coder)
         }
-        
-    }
-    
-    
-    
-    // MARK: - UICollectionViewDataSource
-    
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return resultURLS.count
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ImageCollectionViewCell
-        
-        let cellImageURL = resultURLS[indexPath.row].urls.regular
-        
-        cell.configureImageCell(with: cellImageURL)
-        
-        return cell
     }
 }
+
+

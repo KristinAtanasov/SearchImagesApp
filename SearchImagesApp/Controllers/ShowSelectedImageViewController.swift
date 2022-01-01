@@ -1,4 +1,4 @@
-
+// Controller displaying the selected image cell
 
 import UIKit
 
