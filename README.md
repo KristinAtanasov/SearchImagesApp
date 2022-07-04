@@ -16,20 +16,8 @@
 
 
 
-</br>
 
----
 
-![HomeScreen](https://user-images.githubusercontent.com/67967349/140116083-6a9a7a05-133a-4e15-b20e-7c9b1b72efa5.jpg)
-![collectionImages](https://user-images.githubusercontent.com/67967349/140105046-50195df3-1980-4f31-82da-f833efb2d6ad.jpg)
-![selectedImage](https://user-images.githubusercontent.com/67967349/140482159-746a159c-4238-46e2-b220-d5b6b64c62f5.jpg)
-
-</br>
-
----
-
-![homeScreenOffice](https://user-images.githubusercontent.com/67967349/140482271-dbc71511-f88f-4b60-ac90-13ae577e6367.jpg)
-![officeImages](https://user-images.githubusercontent.com/67967349/140482380-d51bca45-e3b2-4a15-aafc-c55918654007.jpg)
 
 
 
